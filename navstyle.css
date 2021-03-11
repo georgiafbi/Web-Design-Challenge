@@ -69,7 +69,8 @@ nav ul li ul li{
 .grayback{
     background-color:rgb(211, 211, 211);
     position:relative;
-    height: 600px;
+    height:600px;
+    padding:20px;
 }
 .tealtxt{
     color:teal;
@@ -84,20 +85,21 @@ nav ul li ul li{
 .whiteback{
     background-color:white;
     width:600px;
-    height:420px;
+    height:440px;
     position:relative;
     top:100px;
-    right:200px;
-    left:180px;
+    /* right:300px; */
+    left:300px;
 }
 .whiteback2{
     background-color:white;
     width:330px;
-    height:400px;
+    height:420px;
     position:relative;
     top:100px;
-    right:200px;
-    left:200px;
+    /* right:400px; */
+    left:380px;
+    padding-top:10zpx;
 }
 .hrposition{
     position:relative;
@@ -107,7 +109,19 @@ nav ul li ul li{
 .floatright{
     float:right;
 }
-#imgspacing{
+.imgspacing{
     padding:10px;
 }
+
+@media(max-width:1000px){
+    .whiteback2{
+      left:180px;
+    }
+    .whiteback{
+      left: 100px;
+    }
+    .grayback{
+        height: 1000px;
+    }
+  }
 
