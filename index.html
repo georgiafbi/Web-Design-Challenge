@@ -13,7 +13,7 @@
     <div class = "container-fluid">
         <div class="row">
             <nav>
-                <div class="col-md-2 col-sm-12">
+                <div class="col-md-12 col-sm-12">
                     <header>
                         <h2 >Latitude</h2>
                     </header>
@@ -44,11 +44,11 @@
             </nav> 
         </div>
         <div class = "row">
-            <div class = "col-3 col-sm-6 col-md-12 whiteback">
+            <div class = "col-md-6 whiteback">
                     <h3 class = "tealtxt" id="h3text">Summary: Latitude vs. Max Temperature</h3>
                     <hr class="hrposition">
                     <div class ="hrposition">
-                        <img src="Resources\assets\images\Fig1.png" id = "main" align = "left" alt = "Fig1" width="200" height="200">
+                        <img src="Resources\assets\images\Fig1.png" id = "main" style ="float:left;" alt = "Fig1" width="200" height="200">
                         <p id="p">The purpose of this project was to analyze how weather changes as you get closer to the equator. 
                         To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on 
                         over 500 cities.<br><br>
@@ -59,15 +59,15 @@
                         any trends and correlations witnessed. </p>
                     </div>
             </div>
-            <div class="col-3 col-sm-6 col-md-12 whiteback2">
+            <div class="col-md-6 whiteback2">
                 <h3 class = "tealtxt">Visualizations</h3>
                 <hr class = "hrposition">
-                <img class="imgspacing" src="Resources\assets\images\Fig1.png" id = "f1" alt = "Fig1" onclick="change(this.src);changePText1(this.value);changeH3Text1(this.value);" width="150" height="150">
-                <img class="imgspacing" src="Resources\assets\images\Fig2.png" id = "f2" alt = "Fig2" onclick="change(this.src);changePText2(this.value);changeH3Text2(this.value);" width="150" height="150">
-                <img class="imgspacing" src="Resources\assets\images\Fig3.png" id = "f3" align="left" onclick="change(this.src);changePText3(this.value);changeH3Text3(this.value);" alt = "Fig3" width="150" height="150">
-                <img class="imgspacing" src="Resources\assets\images\Fig4.png" id = "f4" align="right" onclick="change(this.src);changePText4(this.value);changeH3Text4(this.value);"  alt = "Fig4" width="150" height="150">
+                <img class="imgspacing" src="Resources\assets\images\Fig1.png" id = "f1" style="float:right;margin-right:50px" alt = "Fig1" onclick="change(this.src);changePText1(this.value);changeH3Text1(this.value);" width="180" height="180">
+                <img class="imgspacing" src="Resources\assets\images\Fig2.png" id = "f2" style="float:left;margin-left:50px" alt = "Fig2" onclick="change(this.src);changePText2(this.value);changeH3Text2(this.value);" width="180" height="180">
+                <img class="imgspacing" src="Resources\assets\images\Fig3.png" id = "f3" style="float:left;margin-left:50px;" onclick="change(this.src);changePText3(this.value);changeH3Text3(this.value);" alt = "Fig3" width="180" height="180">
+                <img class="imgspacing" src="Resources\assets\images\Fig4.png" id = "f4" style="float:right;margin-right:50px" onclick="change(this.src);changePText4(this.value);changeH3Text4(this.value);"  alt = "Fig4" width="180" height="180">
             
-                <p>Click any plot to get an in-depth analysis.</p>
+                <!-- <p>Click any plot to get an in-depth analysis.</p> -->
             </div>
         </div>
     

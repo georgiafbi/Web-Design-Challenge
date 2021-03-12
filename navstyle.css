@@ -66,12 +66,12 @@ nav ul li ul li{
 /* div div{
     background-color:blue; 
 } */
-.grayback{
+/* .grayback{
     background-color:rgb(211, 211, 211);
     position:relative;
     height:600px;
     padding:20px;
-}
+} */
 .tealtxt{
     color:teal;
     font-weight:bold;
@@ -93,8 +93,8 @@ nav ul li ul li{
 }
 .whiteback2{
     background-color:white;
-    width:330px;
-    height:420px;
+    width:600px;
+    height:440px;
     position:relative;
     top:100px;
     /* right:400px; */
@@ -110,18 +110,44 @@ nav ul li ul li{
     float:right;
 }
 .imgspacing{
-    padding:10px;
+    padding:5px;
 }
 
-@media(max-width:1000px){
+@media(max-width:1200px){
     .whiteback2{
-      left:180px;
+      left:100px;
     }
     .whiteback{
       left: 100px;
     }
-    .grayback{
-        height: 1000px;
+    
+  }
+  @media(max-width:720px){
+    .whiteback2{
+      left: 50px;
+      height: 500px;
+      width:450px;
     }
+    .whiteback{
+      left: 50px;
+      height: 500px;
+      width:450px;
+
+    }
+    
+  }
+  @media(max-width:450px){
+    .whiteback2{
+      left: 50px;
+      height: 900px;
+      width:400px;
+    }
+    .whiteback{
+      left: 50px;
+      height: 700px;
+      width:400px;
+
+    }
+    
   }
 
