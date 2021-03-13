@@ -14,6 +14,9 @@
 .humcolor{
     background-color: greenyellow;
 }
+.comparisoncolor{
+    background-color: rebeccapurple;
+}
 nav{
     width:100%;
     height: 59px;
@@ -26,7 +29,7 @@ nav header{
 }
 nav header h2{
     padding: 10px; 
-    background-color: teal;
+    background-color:teal;
     text-align:center;
     color:white;
     font-weight: bold;
@@ -149,7 +152,7 @@ figcaption{
     border:blue;
 }
 .imgsize{
-    width:160px;
+    width:250px;
     height:160px;
 }
 img {
@@ -179,7 +182,7 @@ img {
         position:relative;
         top:auto;
     }
-    .indexcolor,.tempcolor,.humcolor,.wscolor,.cloudcolor{
+    .indexcolor,.tempcolor,.humcolor,.wscolor,.cloudcolor,.comparisoncolor{
         background-color: white;
     }
     nav{
