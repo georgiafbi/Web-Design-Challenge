@@ -101,12 +101,34 @@ nav ul li ul li{
     top:150px;
     max-width: 1200;
 }
+.compobject{
+    background-color:white;
+    position:relative;
+    top:10px;
+    width: 1000px;
+    height:850px;
+}
+.compimg{
+    /* position:relative; */
+    margin-right:5px;
+    margin-left:5px;
+    margin-bottom: 5px;
+    padding:3px;
+    width:450px;
+    height:310px;
+    max-height:320px;
+    max-width:460px;
+}
  .whiteback2{
     background-color:white;
     position:relative;
     top:150px;
     min-width: 300px;
     max-width: 769px;
+}
+figcaption{
+    text-align: center;
+    position:relative;
 }
 .hrposition{
     position:relative;
@@ -167,9 +189,6 @@ img {
         display: none;
     }
     .btn{
-        display:block;
-    }
-    #pcd{
         display:block;
     }
 

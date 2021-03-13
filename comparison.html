@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Windspeed</title>
+    <title>Comparison Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="style.css"> -->
@@ -14,7 +14,7 @@
     <!-- Plots, Comparison, Data on the top right of landing page -->
 </head>
 
-<body class="wscolor">
+<body class="indexcolor">
     <div class="container-fluid">
         <div class="row">
             <nav>
@@ -85,62 +85,51 @@
             </nav>
         </div>
         <div class="row">
-            <div class="container col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 whiteback">
-                <h3 class="tealtxt" id="h3text">Summary: Latitude vs. Wind Speed</h3>
-                <hr class="hrposition">
-                <div class="hrposition">
-                    <img src="Resources\assets\images\Fig4.png" id="main" style="float:left;" alt="Fig1" width="250"
-                        height="250">
-                    <p id="p">
-                        Wind Speed<br><br>Wind Speed
-                    </p>
-                </div>
-            </div>
-            <div class="container-fluid col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 whiteback2">
-                <h3 class="tealtxt">Visualizations</h3>
-                <hr class="hrposition">
 
+            <div class="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 compobject">
+                <h3 class="tealtxt">Comparison:Latitude vs X</h3>
+                <hr class="hrposition">
+                <p style="font-weight:bolder;"><br>Click on any plot to get in-depth analysis.</p>
                 <div class="row">
-                    <div class="col-xs-2 col-sm-3 col-md-5 col-lg-5 col-xl-6" style="margin:left 10px;">
-                        <a href="temp.html"> <img src="Resources\assets\images\Fig1.png" id="f1" alt="Fig1"
-                                onclick="change(this.src);changePText1(this.value);changeH3Text1(this.value);"
-                                class="imgleft imgsize">
-                        </a>
-                        <p style="text-align:center;font-weight:bold;color:teal;">Max-Temperature</p>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-6" style="margin:left 10px;">
+                        <figure>
+                            <a href="temp.html"> <img src="Resources\assets\images\Fig1.png" id="f1" alt="Fig1"
+                                    onclick="change(this.src);changePText1(this.value);changeH3Text1(this.value);"
+                                    class="compimg imgright">
+                            </a>
+                            <figcaption style="font-weight:bold;color:teal;">vs. Max-Temperature</figcaption>
+                        </figure>
                     </div>
-                    <div class="col-xs-2 col-sm-3 col-md-5 col-lg-5 col-xl-6" style="margin:left 10px;">
-                        <a href="humidity.html"><img src="Resources\assets\images\Fig2.png" id="f2" alt="Fig2"
-                                onclick="change(this.src);changePText2(this.value);changeH3Text2(this.value);"
-                                class="imgright imgsize">
-                        </a>
-                        <p style="text-align:center;font-weight:bold;color:teal;">Humidity</p>
-                    </div>
-
-
-
-
-                    <div class="col-xs-2 col-sm-3 col-md-5 col-lg-5 col-xl-6" style="margin:left 10px;">
-                        <a href="cloudiness.html">
-                            <img src="Resources\assets\images\Fig3.png" id="f3" alt="Fig3"
-                                onclick="change(this.src);changePText3(this.value);changeH3Text3(this.value);"
-                                alt="Fig3" class="imgleft imgsize">
-                        </a>
-                        <p style="text-align:center;font-weight:bold;color:teal;">Cloudiness</p>
-                    </div>
-                    <div class="col-xs-2 col-sm-3 col-md-5 col-lg-5 col-xl-6" style="margin:left 10px;">
-                        <a href="windspeed.html">
-                            <img src="Resources\assets\images\Fig4.png" id="f4" alt="Fig4"
-                                onclick="change(this.src);changePText4(this.value);changeH3Text4(this.value);"
-                                alt="Fig4" class="imgright imgsize">
-                        </a>
-                        <p style="text-align:center;font-weight:bold;color:teal;">Wind Speed</p>
-
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-6" style="margin:left 10px;">
+                        <figure>
+                            <a href="humidity.html"><img src="Resources\assets\images\Fig2.png" id="f2" alt="Fig2"
+                                    onclick="change(this.src);changePText2(this.value);changeH3Text2(this.value);"
+                                    class="compimg imgleft">
+                            </a>
+                            <figcaption style="font-weight:bold;color:teal;">vs. Humidity</figcaption>
+                        </figure>
                     </div>
 
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-6" style="margin:left 10px;">
+                        <figure>
+                            <a href="cloudiness.html">
+                                <img src="Resources\assets\images\Fig3.png" id="f3" alt="Fig3"
+                                    onclick="change(this.src);changePText3(this.value);changeH3Text3(this.value);"
+                                    alt="Fig3" class="compimg imgright">
+                            </a>
+                            <figcaption style="font-weight:bold;color:teal;">vs. Cloudiness</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-6" style="margin:left 10px;">
+                        <figure>
+                            <a href="windspeed.html">
+                                <img src="Resources\assets\images\Fig4.png" id="f4" alt="Fig4"
+                                    onclick="change(this.src);changePText4(this.value);changeH3Text4(this.value);"
+                                    alt="Fig4" class="compimg imgleft">
+                            </a>
+                            <figcaption style="text-align:center;font-weight:bold;color:teal;">vs. Wind Speed</figcaption>
+                        </figure>
 
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <p style="text-align:center;font-weight:bold;">Click on image for more detail.</p>
                     </div>
                 </div>
 
@@ -149,7 +138,6 @@
     </div>
 
     </div>
-
     <script type="text/javascript">
         const change = src => {
             document.getElementById('main').src = src
@@ -214,6 +202,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 </body>
+
 
 </html>
